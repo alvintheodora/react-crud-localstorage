@@ -21,7 +21,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      products: localStorage.getItem('products')?JSON.parse(localStorage.getItem('products')):products
+      products: sessionStorage.getItem('products')?JSON.parse(sessionStorage.getItem('products')):products
     }
 
     this.deleteProduct = this.deleteProduct.bind(this);
@@ -38,7 +38,7 @@ class App extends Component {
   }
 
   componentDidUpdate(){
-    localStorage.setItem('products', JSON.stringify(this.state.products));
+    sessionStorage.setItem('products', JSON.stringify(this.state.products));
   }
 
   getProducts(){
@@ -50,6 +50,7 @@ class App extends Component {
     newProducts = newProducts.filter(product=>{
       return product.name !== deletedProductName;
     });
+    console.log(newProducts);
 
     this.setState({
       products: newProducts
@@ -94,7 +95,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Products Manager <span>using localStorage</span></h1>
+        <h1>Products Manager <span>using sessionStorage</span></h1>
         <h2>Add Product</h2>      
         <div>
           <form>
