@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { withRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import ProductItem from './ProductItem';
+import ProductItem from './components/ProductItem';
+
+
 
 const products = [
   {
@@ -12,6 +15,12 @@ const products = [
     price: 2000
   }
 ]
+
+const HomeChild = () => (
+  <div className="homechild">
+    <h2>=============Home Child============</h2>
+  </div>
+)
 
 
 
@@ -27,6 +36,7 @@ class App extends Component {
     this.deleteProduct = this.deleteProduct.bind(this);
     this.addProduct = this.addProduct.bind(this);  
     this.editProduct = this.editProduct.bind(this);
+
   }
 
   componentWillMount(){
@@ -92,10 +102,22 @@ class App extends Component {
   }
 
 
-  render() {
+
+
+  render() {      
+  // console.log(this.props.match);
     return (
+      
       <div className="App">
+       
+        <Switch>           
+            <Route path={`${this.props.match.path}homeChild`} component={HomeChild}/>        
+        </Switch>   
+      
+     
+
         <h1>Products Manager <span>using sessionStorage</span></h1>
+         
         <h2>Add Product</h2>      
         <div>
           <form>
@@ -104,7 +126,7 @@ class App extends Component {
             <button type="submit" onClick={this.addProduct}>Add</button>
           </form>
         </div>
-        <hr/>
+  
 
         <ul>
         {
@@ -128,10 +150,12 @@ class App extends Component {
           })
         }
         </ul>
+
         
+
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);//to use props.history
