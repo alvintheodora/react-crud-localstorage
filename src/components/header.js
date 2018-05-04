@@ -9,22 +9,22 @@ constructor(props){
     }
 
 navigate(){
-    this.props.history.push('/abc')
+    this.props.history.push(process.env.PUBLIC_URL+'/abc')
     }
   render() {      
-    //console.log(this.props.match.url);
+    
     return (
         <div>
-        <h2>Headers</h2>
+        <h2>Header</h2>
         <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/homeChild">Home Child</Link></li>
-            <li><Link to="/user">User</Link></li>
-            <li><Link to="/archive/1">Archive</Link></li>
-            <button onClick={this.navigate}>button to home</button>
-            <li><Link to="/todo">Todo</Link></li>
-            <li><Link to="/favorite">Favorite</Link></li>
-            <li><Link to="/setting">Setting</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/`}>CRUD (sessionStorage)</Link></li>         
+            <li><Link to={`${process.env.PUBLIC_URL}/todo`}>To-Do List with Flux</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/react-redux`}>React Redux</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/params/1`}>Router Params</Link></li>
+            <button onClick={this.navigate}>history.push /abc</button>
+            
+            {/* <li><Link to={`${process.env.PUBLIC_URL}/favorite`}>Favorite</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/setting`}>Setting</Link></li> */}
         </ul>
 
             <hr/>

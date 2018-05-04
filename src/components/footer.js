@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div>
       <hr/>
-     <h2>Footers</h2>
+     <h2>Footer</h2>
      </div>
     );
   }

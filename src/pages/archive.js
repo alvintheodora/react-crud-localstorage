@@ -5,11 +5,11 @@ class Archive extends Component {
   
 
   render() {      
-    // console.log(this.props.match);
+     
    const { match } = this.props;
     const { params } = match;
     return (
-     <h2>Archives {params.article}</h2>
+     <h2>Router Params: {params.article}</h2>
     );
   }
 }

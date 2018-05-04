@@ -116,7 +116,7 @@ class App extends Component {
       
      
 
-        <h1>Products Manager <span>using sessionStorage</span></h1>
+        <h1>CRUD <span>using sessionStorage</span></h1>
          
         <h2>Add Product</h2>      
         <div>

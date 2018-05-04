@@ -1,15 +1,17 @@
 import { EventEmitter } from 'events';//built-in form node js
+import dispatcher from '../dispatcher';
+
 class TodoStore extends EventEmitter{
     constructor(){
         super();
         this.todos = [
             {
-                id: 923343,
+                id: "923343",
                 text: "Go Shopping",
                 complete: true
             },
             {
-                id: 198234,
+                id: "198234",
                 text: "Pay Water Bills",
                 complete: false
             }
@@ -29,8 +31,42 @@ class TodoStore extends EventEmitter{
 
         this.emit('change');
     }
+
+    deleteTodo(id){  
+        this.todos = this.todos.filter(todo => {
+            return todo.id !== id;
+        });       
+
+        this.emit('change');
+    }
+
+    reloadTodo(todos){       
+        this.todos = todos;
+        this.emit('change');
+    }
+
+    handleAction(action){
+        switch(action.type){
+            case 'CREATE_TO_DO': 
+                this.createToDo(action.text);
+                break;
+            case 'DELETE_TO_DO': 
+                this.deleteTodo(action.id);
+                break;
+            case 'RECEIVE_TO_DO': 
+                this.reloadTodo(action.todos);
+                break;
+            default: break;
+        }
+    }
 }
 
 const todoStore = new TodoStore();
 window.todoStore = todoStore;
+window.dispatcher = dispatcher;
+
+
+dispatcher.register(todoStore.handleAction.bind(todoStore));
+
+
 export default todoStore;

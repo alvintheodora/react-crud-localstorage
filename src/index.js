@@ -2,28 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import registerServiceWorker from './registerServiceWorker';
-import {
-    BrowserRouter as Router,
-    Route
-  } from 'react-router-dom';
+import { unregister } from './registerServiceWorker';
 import Layout from './components/layout';
 
-
-
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
-    <Router>    
-        <div>
-            
-          <Route path="/" component={Layout}/>           
-                  
-        
-      
-         
-        </div> 
-      </Router>
-      
-      
-, document.getElementById('root'));
-registerServiceWorker();
+    <Provider store={store}>
+        <Layout/>
+    </Provider>, 
+    document.getElementById('root')
+);
+
+unregister();
