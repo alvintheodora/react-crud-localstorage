@@ -136,7 +136,7 @@ class App extends Component {
     const { classes } = this.props;
     return (
       
-      <div className="App">
+      <div className="CRUD">
        
         <Switch>           
             <Route path={`${this.props.match.path}homeChild`} component={HomeChild}/>        

@@ -82,33 +82,33 @@ class ButtonAppBar extends React.Component {
       );
 
     return (
-        <div className={classes.root}>
-        <AppBar position="static">
-            <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
-                <MenuIcon />
-            </IconButton>                
-            <Typography variant="title" color="inherit" className={classes.flex}>
-                {this.state.title}
-            </Typography>          
-            </Toolbar>
-        </AppBar>
-        
-        
-        <SwipeableDrawer
-          open={this.state.left}
-          onClose={this.toggleDrawer('left', false)}
-          onOpen={this.toggleDrawer('left', true)}
-        >
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer('left', false)}
-            onKeyDown={this.toggleDrawer('left', false)}
+        <div className="AppBarDrawer">
+          <AppBar position="static">
+              <Toolbar>
+              <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
+                  <MenuIcon />
+              </IconButton>                
+              <Typography variant="title" color="inherit" className={classes.flex}>
+                  {this.state.title}
+              </Typography>          
+              </Toolbar>
+          </AppBar>
+          
+          
+          <SwipeableDrawer
+            open={this.state.left}
+            onClose={this.toggleDrawer('left', false)}
+            onOpen={this.toggleDrawer('left', true)}
           >
-            {sideList}
-          </div>
-        </SwipeableDrawer>
+            <div
+              tabIndex={0}
+              role="button"
+              onClick={this.toggleDrawer('left', false)}
+              onKeyDown={this.toggleDrawer('left', false)}
+            >
+              {sideList}
+            </div>
+          </SwipeableDrawer>
         
         </div>
     );

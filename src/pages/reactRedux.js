@@ -72,7 +72,7 @@ class ReactRedux extends Component {
        </div>
       ) 
     return (
-        <div>
+        <div className="react-redux">
             <h2>React Redux</h2>
             <div><code>F12 -> console, to see redux log</code></div>
             <br/>
