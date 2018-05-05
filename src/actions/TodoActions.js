@@ -14,6 +14,13 @@ export function deleteTodo(id){
     });
 }
 
+export function completeTodo(id){
+    dispatcher.dispatch({
+        type: 'COMPLETE_TO_DO',
+        id
+    });
+}
+
 export function reloadTodo(){
     dispatcher.dispatch({
         type: 'FETCH_TO_DO'

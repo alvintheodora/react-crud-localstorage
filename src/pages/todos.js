@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import Todo from '../components/todo';
 import TodoStore from '../stores/TodoStore';
 import * as TodoAction from '../actions/TodoActions';
+import Button from 'material-ui/Button';
+import { withStyles } from 'material-ui/styles';
+import TextField from 'material-ui/TextField';
+
+const styles = theme => ({
+    button: {
+      margin: theme.spacing.unit,
+    },
+    input: {
+      display: 'none',
+    },
+  });
 
 class Todos extends Component {  
 
@@ -9,7 +21,8 @@ class Todos extends Component {
         super(props);
         
         this.state = {
-            todos: TodoStore.getAll()            
+            todos: TodoStore.getAll(),
+            name: ''         
         }
 
         this.createTodo = this.createTodo.bind(this);  
@@ -31,32 +44,57 @@ class Todos extends Component {
     }
 
     createTodo(){
-        TodoAction.createTodo(this.input.value);
-        this.input.value='';
+        TodoAction.createTodo(this.state.name);
+        this.setState({
+            name: ''
+        });
     }
 
     deleteTodo(id){
         TodoAction.deleteTodo(id); 
     }
 
+    completeTodo(id){
+        TodoAction.completeTodo(id); 
+    }
+
     reloadTodo(){
         TodoAction.reloadTodo(); 
     }
 
+    handleChange = name => event => {
+        this.setState({
+          [name]: event.target.value,
+        });
+      };
+
 
   render() { 
+    const { classes } = this.props;
+
     const TodoComponents = this.state.todos.map(todo => {
-        return <Todo key={todo.id} onDelete={this.deleteTodo} {...todo}/>
+        return <Todo key={todo.id} onDelete={this.deleteTodo} onComplete={this.completeTodo} {...todo}/>
     });       
     return (
     <div className="todos">
-        <h2>Todos</h2>
-        <input type="text" ref={input => this.input = input}/> <button onClick={this.createTodo}>Create!</button>
-        <button onClick={this.reloadTodo}>Reload!</button>
+        <h2>Flux</h2>
+
+        <TextField
+          id="name"
+          label="Activity"        
+          margin="normal"
+          value={this.state.name}       
+          onChange={this.handleChange('name')}  
+        />
+
+        <Button size="small" variant="raised" color="primary" className={classes.button} onClick={this.createTodo}>Create</Button>
+        <Button size="small" variant="raised" color="default" className={classes.button} onClick={this.reloadTodo}>Reload</Button>
+
         <ul>{TodoComponents}</ul>
+        
      </div>
     );
   }
 }
 
-export default Todos;
+export default withStyles(styles)(Todos);

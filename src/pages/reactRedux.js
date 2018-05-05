@@ -2,6 +2,23 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setName } from '../actions/userAction';
 import { getErvillUsers } from '../actions/ervillAction';
+import Button from 'material-ui/Button';
+import List, { ListItem, ListItemText } from 'material-ui/List';
+import { withStyles } from 'material-ui/styles';
+import Typography from 'material-ui/Typography';
+import { Avatar } from 'material-ui';
+import avatarImage from '../avatar.jpg';
+
+const styles = theme => ({
+    root: {     
+      margin: theme.spacing.unit,   
+      backgroundColor: theme.palette.background.paper,
+    },
+    center: {
+        textAlign: 'center'
+    }
+  });
+  
 
 function mapStateToProps(state) {
     return {
@@ -27,22 +44,32 @@ class ReactRedux extends Component {
     }
 
   render() {    
-      const { user, ervill } = this.props;   
+      const { user, ervill, classes } = this.props;   
       
       const ervillElement = ervill===undefined?(       
         <div> 
             <br/>
-            <button onClick={this.fetchErvillUsers}>Fetch</button>  
+            <Button size="small" variant="raised" color="primary" onClick={this.fetchErvillUsers}>Fetch</Button>         
         </div>    
       ) : (
-        <ul>
+        <div className={classes.root}>
+            <Typography variant="title" color="inherit">
+                List of Users
+            </Typography>
+            <List component="nav">
             {
                 ervill.map((user) => {
-                    return <li key={user.id}>{user.full_name}</li>
+                    return (
+                        <ListItem button key={user.id} className={classes.center}>
+                             <Avatar alt="Remy Sharp" src={avatarImage} />
+                            <ListItemText inset primary={user.full_name}  />
+                        </ListItem>
+                    )
                 })
           
             }
-        </ul>
+            </List>
+       </div>
       ) 
     return (
         <div>
@@ -51,7 +78,8 @@ class ReactRedux extends Component {
             <br/>
             <div>Name: {user}</div>
             <br/>
-            <span>Fetch data from <a href="http://rev-ervill.esy.es/api/users">http://rev-ervill.esy.es/api/users</a></span>
+            <span>Fetch data from <a href="https://my-json-server.typicode.com/alvintheodora/react-crud-localstorage/data">https://my-json-server.typicode.com/alvintheodora/react-crud-localstorage/data</a></span>
+            <br/>
             { ervillElement }  
            
         </div>
@@ -59,4 +87,4 @@ class ReactRedux extends Component {
   }
 }
 
-export default connect(mapStateToProps)(ReactRedux);
+export default connect(mapStateToProps)(withStyles(styles)(ReactRedux));

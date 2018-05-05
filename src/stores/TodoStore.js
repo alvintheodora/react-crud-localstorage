@@ -40,6 +40,17 @@ class TodoStore extends EventEmitter{
         this.emit('change');
     }
 
+    completeTodo(id){  
+        this.todos = this.todos.map(todo => {
+            if( todo.id === id ){
+                todo.complete = true;
+            }
+            return todo;
+        });       
+
+        this.emit('change');
+    }
+
     reloadTodo(todos){       
         this.todos = todos;
         this.emit('change');
@@ -55,6 +66,9 @@ class TodoStore extends EventEmitter{
                 break;
             case 'RECEIVE_TO_DO': 
                 this.reloadTodo(action.todos);
+                break;
+            case 'COMPLETE_TO_DO': 
+                this.completeTodo(action.id);
                 break;
             default: break;
         }

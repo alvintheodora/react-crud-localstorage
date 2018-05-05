@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import ProductItem from './components/ProductItem';
+import Button from 'material-ui/Button';
+import { withStyles } from 'material-ui/styles';
+import TextField from 'material-ui/TextField';
 
 
 
 const products = [
   {
+    id: 12345,
     name: 'iPad',
     price: 100
   },
   {
+    id: 23456,
     name: 'Television',
     price: 2000
   }
@@ -22,6 +27,17 @@ const HomeChild = () => (
   </div>
 )
 
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+  textField: {
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
+    width: 200,
+  },
+
+});
 
 
 class App extends Component {
@@ -30,7 +46,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      products: sessionStorage.getItem('products')?JSON.parse(sessionStorage.getItem('products')):products
+      products: sessionStorage.getItem('products')!=='[]' && sessionStorage.getItem('products')!==null?JSON.parse(sessionStorage.getItem('products')):products,
+      name:'',
+      price: ''
     }
 
     this.deleteProduct = this.deleteProduct.bind(this);
@@ -44,7 +62,7 @@ class App extends Component {
     this.setState({
       products: products 
     });
-    
+    console.log(this.state);
   }
 
   componentDidUpdate(){
@@ -55,12 +73,12 @@ class App extends Component {
     return this.state.products;   
   }
 
-  deleteProduct(deletedProductName){     
+  deleteProduct(id){     
     let newProducts = [...this.state.products];    
     newProducts = newProducts.filter(product=>{
-      return product.name !== deletedProductName;
+      return product.id !== id;
     });
-    console.log(newProducts);
+   
 
     this.setState({
       products: newProducts
@@ -71,24 +89,26 @@ class App extends Component {
     e.preventDefault();    
    
    const newProduct = {
-      name: this.inputName.value,
-      price: this.inputPrice.value
-    };
-     
-    this.inputName.value=this.inputPrice.value='';
+      id: Date.now(),
+      name: this.state.name,
+      price: this.state.price
+    };     
+   
 
     this.setState({
-      products: [...this.state.products, newProduct]
+      products: [...this.state.products, newProduct],
+      name: '',
+      price: ''
     });
     
   }
 
 
-  editProduct(name, price, prevName){    
+  editProduct(name, price, prevID){    
     let newProducts = [...this.state.products];    
     
     newProducts = newProducts.map((product)=>{
-      if(product.name===prevName){
+      if(product.id===prevID){
         product.name = name;
         product.price = price;
       }
@@ -101,11 +121,19 @@ class App extends Component {
 
   }
 
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
+
 
 
 
   render() {      
   // console.log(this.props.match);
+
+    const { classes } = this.props;
     return (
       
       <div className="App">
@@ -118,12 +146,31 @@ class App extends Component {
 
         <h1>CRUD <span>using sessionStorage</span></h1>
          
-        <h2>Add Product</h2>      
+        <h2>Product Manager</h2>    
+        <code>sessionStorage means data will persist until the tab is closed</code>  
         <div>
           <form>
-            <input type="text" ref={input=>this.inputName=input}/>
-            <input type="text" ref={input=>this.inputPrice=input}/>
-            <button type="submit" onClick={this.addProduct}>Add</button>
+            <TextField
+               
+              id="name"
+              label="Product Name"        
+              margin="normal"
+              value={this.state.name}       
+              onChange={this.handleChange('name')}  
+              className={classes.textField}
+              inputRef={input=>this.inputName=input}
+
+            />
+            <TextField
+              id="price"
+              label="Price"        
+              margin="normal"
+              value={this.state.price}       
+              onChange={this.handleChange('price')}  
+              className={classes.textField}
+            />
+            <Button size="small" variant="raised" color="primary" className={classes.button} onClick={this.addProduct}>Add</Button>  
+           
           </form>
         </div>
   
@@ -141,7 +188,7 @@ class App extends Component {
               //   <button type="button" onClick={()=>this.deleteProduct(product.name)}>Delete</button>
               // </li>
 
-              <ProductItem key={product.name}
+              <ProductItem key={product.id}
                 onDelete={this.deleteProduct} 
                 onEdit={this.editProduct}
                 {...product}//spread operator es6
@@ -158,4 +205,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);//to use props.history
+export default withRouter(withStyles(styles)(App));//to use props.history

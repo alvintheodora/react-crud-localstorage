@@ -1,4 +1,27 @@
 import React, { Component } from 'react';
+import { withStyles } from 'material-ui/styles';
+import Button from 'material-ui/Button';
+import blue from 'material-ui/colors/blue';
+import TextField from 'material-ui/TextField';
+
+const styles = theme => ({
+    button: {
+      margin: theme.spacing.unit,
+    },    
+    buttonblue: {
+      color: theme.palette.getContrastText(blue[500]),
+      backgroundColor: blue[500],
+      '&:hover': {
+        backgroundColor: blue[700],
+      },
+    },
+    textField: {
+        marginLeft: theme.spacing.unit,
+        marginRight: theme.spacing.unit,
+        width: 200,
+      },
+  });
+
 
 class ProductItem extends Component {
 
@@ -6,7 +29,9 @@ class ProductItem extends Component {
     super(props);   
 
     this.state = {
-        isEdit: false
+        isEdit: false,
+        name: '',
+        price: ''
     };
 
     this.deleteProduct = this.deleteProduct.bind(this);
@@ -14,9 +39,17 @@ class ProductItem extends Component {
     this.editProduct = this.editProduct.bind(this);
   }
 
+  static getDerivedStateFromProps(nextProps, prevState){
+      return {
+        isEdit: prevState.isEdit,
+        name: nextProps.name,
+        price: nextProps.price
+      };
+  }
+
 
   deleteProduct(){     
-    this.props.onDelete(this.props.name);
+    this.props.onDelete(this.props.id);
   }
 
   onEdit(){
@@ -28,30 +61,52 @@ class ProductItem extends Component {
   editProduct(e){     
     e.preventDefault();
 
-    this.props.onEdit(this.inputName.value, this.inputPrice.value, this.props.name);
+    this.props.onEdit(this.state.name, this.state.price, this.props.id);
 
     this.setState({
-        isEdit: false
+        isEdit: false,
+        name: '',
+        price: ''
     });
   }
 
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
+
   render() {
-    const { name, price } = this.props;    
+    const { name, price, classes } = this.props;    
     return (           
         <li>
               
             {
                 this.state.isEdit? (
-                    <form>
-                        <input type="text" ref={input=>this.inputName=input} defaultValue={name}/>
-                        <input type="text" ref={input=>this.inputPrice=input} defaultValue={price}/>
-                        <button type="submit" onClick={this.editProduct}>Save</button>
+                    <form>                 
+                        <TextField
+                            id="name"
+                            label="Product Name"        
+                            margin="normal"
+                            defaultValue={this.state.name}       
+                            onChange={this.handleChange('name')}  
+                            className={classes.textField}
+                        />
+                        <TextField
+                            id="price"
+                            label="Price"        
+                            margin="normal"
+                            defaultValue={this.state.price}       
+                            onChange={this.handleChange('price')}  
+                            className={classes.textField}
+                        />
+                        <Button size="small" variant="raised" color="secondary" className={classes.buttonblue} onClick={this.editProduct}>Save</Button> 
                     </form>                
                 ):(
                     <span>
-                        {name + ' | ' + price + ' | '}   
-                        <button type="button" onClick={this.onEdit}>Edit</button>
-                        <button type="button" onClick={this.deleteProduct}>Delete</button>   
+                        {name + ' | ' + price + ' '}   
+                        <Button size="small" variant="raised" color="secondary" className={classes.buttonblue} onClick={this.onEdit}>Edit</Button> 
+                        <Button size="small" variant="raised" color="secondary" className={classes.button} onClick={this.deleteProduct}>Delete</Button>                      
                     </span>
                 )
             }  
@@ -62,4 +117,4 @@ class ProductItem extends Component {
   }
 }
 
-export default ProductItem;
+export default withStyles(styles)(ProductItem);

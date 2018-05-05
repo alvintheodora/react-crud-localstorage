@@ -3,23 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Archive from '../pages/archive';
 import Header from './header';
-import Footer from './footer';
 import App from '../App';
 import Todo from '../pages/todos';
 import ReactRedux from '../pages/reactRedux';
-// import '../client';
-// import Favorite from '../pages/favorite';
-// import Setting from '../pages/setting';
-
-
-
-// const User = () => {    
-//     return (
-//     <div className="user">
-//       <h2>User</h2>
-//     </div>
-//   )}
-
+import Footer from './footer';
 
 class Layout extends Component {
 
@@ -43,7 +30,6 @@ class Layout extends Component {
                 <Route component={ App }/>                     
             </Switch>   
           
-
             <Footer/>
           </div>
         </Router>
