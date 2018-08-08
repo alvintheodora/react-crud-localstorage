@@ -156,6 +156,6 @@
             "interactionLimitEnabled": true,
             "interactionLimit": 2000,            
         },
-    ]
+    ],
     "empty": []
 }
