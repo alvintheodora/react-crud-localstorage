@@ -64,7 +64,7 @@
     },  
     {
       "companyId": "2",
-      "name": "Company Alpha",          
+      "name": "Company Beta",          
       "type": 0,
       "address1": "address 2",
       "address2": "",
@@ -79,7 +79,7 @@
     },    
     {
       "companyId": "3",
-      "name": "Company Alpha",          
+      "name": "Company Charlie",          
       "type": 0,
       "address1": "address 3",
       "address2": "",
