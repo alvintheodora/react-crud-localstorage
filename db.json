@@ -124,7 +124,7 @@
         },
     ],
     "trigger": [
-            {
+        {
             "triggerId":"1",
             "name":"Leanne Lueilwitz",
             "campaignId":"1",
@@ -139,8 +139,9 @@
             "framesTotal":111,
             "mime":"image/jpeg",
             "createdAt":"10 Aug 2018",
-            "updatedAt":"10 Aug 2018"},
-            {
+            "updatedAt":"10 Aug 2018"
+        },
+        {
             "triggerId":"2",
             "name":"Jerald Heathcote",
             "campaignId":"1",
@@ -156,6 +157,6 @@
             "mime":"image/jpeg",
             "createdAt":"10 Aug 2018",
             "updatedAt":"10 Aug 2018"
-            }            
-        ]
+        }            
+    ]
 }
