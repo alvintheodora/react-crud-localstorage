@@ -1,1 +1,294 @@
-{"data":[{"id":4,"full_name":"Ahmad Saepudin","email":"ahmadsaepudin204@gmail.com"},{"id":5,"full_name":"Untung Suripto","email":"driver@ervill.net"},{"id":6,"full_name":"Sulhan Syadeli","email":"hansyadeli@yahoo.com"},{"id":7,"full_name":"Rifqi Ruhyattamam","email":"rifqi96@yahoo.com"},{"id":8,"full_name":"Yani","email":"yani@ervill.net"},{"id":9,"full_name":"Alvin Theodora","email":"alvin_theodora@yahoo.com"},{"id":10,"full_name":"Asyfida Bella","email":"asyfida.bella@live.com"},{"id":11,"full_name":"Dwi Iriani","email":"dwiiriani.liman@gmail.com"},{"id":13,"full_name":"API Tester","email":"apitester@ervill.net"}],"company":[{"companyId":"1","name":"Company Alpha","type":0,"address1":"address 1","address2":"","city":"city1","state":"state1","zip":"15343","country":"SG","phone":"11223344","fax":"11223344","email":"company1@a.com","website":"http://company1.com"},{"companyId":"2","name":"Company Beta","type":0,"address1":"address 2","address2":"","city":"city2","state":"state2","zip":"25343","country":"SG","phone":"22223344","fax":"22223344","email":"company2@a.com","website":"http://company2.com"},{"companyId":"3","name":"Company Charlie","type":0,"address1":"address 3","address2":"","city":"city3","state":"state3","zip":"35343","country":"SG","phone":"33333344","fax":"33333344","email":"company3@a.com","website":"http://company3.com"}],"app":[{"applicationId":"1","name":"Application Alpha","companyId":"1","key":"key1","enabled":1},{"applicationId":"2","name":"Application Beta","companyId":"1","key":"key2","enabled":0},{"applicationId":"3","name":"Application Charlie","companyId":"2","key":"key3","enabled":1}],"campaign":[{"campaignId":"1","name":"Campaign Alpha","appId":"1","key":"key1","enabled":1,"createdAt":"1 Jan 2018","updatedAt":"1 Jan 2018","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","interaction":1000,"interactionLimitEnabled":true,"interactionLimit":1500},{"campaignId":"2","name":"Campaign Beta","appId":"1","key":"key2","enabled":0,"createdAt":"2 Jan 2018","updatedAt":"2 Jan 2018","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","interaction":1000,"interactionLimitEnabled":false,"interactionLimit":0},{"campaignId":"3","name":"Campaign Charlie","appId":"1","key":"key3","enabled":1,"createdAt":"3 Jan 2018","updatedAt":"3 Jan 2018","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","interaction":1000,"interactionLimitEnabled":true,"interactionLimit":2000},{"campaignId":"4","name":"Campaign Delta","appId":"2","key":"key4","enabled":1,"createdAt":"4 Jan 2018","updatedAt":"4 Jan 2018","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","interaction":1000,"interactionLimitEnabled":true,"interactionLimit":2500}],"trigger":[{"triggerId":"1","name":"Leanne Lueilwitz","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://christop.info","custom":"","enabled":0,"status":3,"framesAccepted":1,"framesTrained":11,"framesTotal":111,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"2","name":"Jerald Heathcote","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://bethel.com","custom":"","enabled":0,"status":2,"framesAccepted":2,"framesTrained":22,"framesTotal":222,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"3","name":"Diamond Langworth","campaignId":"2","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://elva.org","custom":"","enabled":0,"status":3,"framesAccepted":3,"framesTrained":33,"framesTotal":333,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"4","name":"Delta theTrigger","campaignId":"4","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://google.com","custom":"","enabled":0,"status":3,"framesAccepted":4,"framesTrained":44,"framesTotal":444,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"353","name":"Kim Walsh MD","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://major.org","custom":"","enabled":0,"status":1,"framesAccepted":56,"framesTrained":30,"framesTotal":78,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"708","name":"Vickie Hoeger","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://marcel.name","custom":"","enabled":0,"status":4,"framesAccepted":15,"framesTrained":42,"framesTotal":84,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"892","name":"Lily Schmidt","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://lola.com","custom":"","enabled":1,"status":1,"framesAccepted":56,"framesTrained":94,"framesTotal":67,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"41","name":"Khalid Littel","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://cloyd.info","custom":"","enabled":0,"status":2,"framesAccepted":38,"framesTrained":5,"framesTotal":62,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"673","name":"Gladys Erdman","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://linnea.net","custom":"","enabled":1,"status":3,"framesAccepted":31,"framesTrained":87,"framesTotal":72,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"12","name":"Mr. Monty Kiehn","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://nels.org","custom":"","enabled":1,"status":3,"framesAccepted":8,"framesTrained":94,"framesTotal":53,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"329","name":"Chance Roberts Sr.","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://sammie.name","custom":"","enabled":1,"status":3,"framesAccepted":55,"framesTrained":29,"framesTotal":73,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"205","name":"Brittany Paucek","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://lawson.net","custom":"","enabled":1,"status":2,"framesAccepted":48,"framesTrained":95,"framesTotal":52,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"573","name":"Mrs. Kay Brekke","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://marley.biz","custom":"","enabled":1,"status":1,"framesAccepted":30,"framesTrained":43,"framesTotal":47,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"250","name":"Lavern Bruen","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://easter.net","custom":"","enabled":0,"status":3,"framesAccepted":55,"framesTrained":22,"framesTotal":5,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"565","name":"Gayle Muller","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://itzel.biz","custom":"","enabled":0,"status":3,"framesAccepted":74,"framesTrained":72,"framesTotal":24,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"67","name":"Floy Champlin DDS","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://darrin.net","custom":"","enabled":0,"status":4,"framesAccepted":83,"framesTrained":35,"framesTotal":19,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"101","name":"Brisa Swaniawski","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://nickolas.org","custom":"","enabled":0,"status":2,"framesAccepted":62,"framesTrained":32,"framesTotal":24,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"401","name":"Tamara Mohr","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"https://jeff.com","custom":"","enabled":0,"status":1,"framesAccepted":23,"framesTrained":2,"framesTotal":18,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"},{"triggerId":"208","name":"Ruben Hayes","campaignId":"1","thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg","payloadUrl":"http://lexus.name","custom":"","enabled":1,"status":4,"framesAccepted":9,"framesTrained":81,"framesTotal":83,"mime":"image/jpeg","createdAt":"10 Aug 2018","updatedAt":"10 Aug 2018"}]}
+{
+    "data":[
+        {
+            "id": 4,
+            "full_name": "Ahmad Saepudin",
+            "email": "ahmadsaepudin204@gmail.com"
+        },
+        {
+            "id": 5,
+            "full_name": "Untung Suripto",
+            "email": "driver@ervill.net"
+        },
+        {
+            "id": 6,
+            "full_name": "Sulhan Syadeli",
+            "email": "hansyadeli@yahoo.com"
+         },
+        {
+            "id": 7,
+            "full_name": "Rifqi Ruhyattamam",
+            "email": "rifqi96@yahoo.com"
+        },
+        {
+            "id": 8,
+            "full_name": "Yani",
+            "email": "yani@ervill.net"
+         },
+        {
+            "id": 9,
+            "full_name": "Alvin Theodora",
+            "email": "alvin_theodora@yahoo.com"
+         },
+        {
+            "id": 10,
+            "full_name": "Asyfida Bella",
+            "email": "asyfida.bella@live.com"
+        },
+        {
+            "id": 11,
+            "full_name": "Dwi Iriani",
+            "email": "dwiiriani.liman@gmail.com"
+        },
+        {
+            "id": 13,
+            "full_name": "API Tester",
+            "email": "apitester@ervill.net"
+        }
+    ],
+    "company": [
+    {
+      "companyId": "1",
+      "name": "Company Alpha",          
+      "type": 0,
+      "address1": "address 1",
+      "address2": "",
+      "city": "city1",
+      "state": "state1",
+      "zip": "15343",
+      "country": "SG",
+      "phone": "11223344",
+      "fax": "11223344",
+      "email": "company1@a.com",
+      "website": "http://company1.com"                
+    },  
+    {
+      "companyId": "2",
+      "name": "Company Beta",          
+      "type": 0,
+      "address1": "address 2",
+      "address2": "",
+      "city": "city2",
+      "state": "state2",
+      "zip": "25343",
+      "country": "SG",
+      "phone": "22223344",
+      "fax": "22223344",
+      "email": "company2@a.com",
+      "website": "http://company2.com"                
+    },    
+    {
+      "companyId": "3",
+      "name": "Company Charlie",          
+      "type": 0,
+      "address1": "address 3",
+      "address2": "",
+      "city": "city3",
+      "state": "state3",
+      "zip": "35343",
+      "country": "SG",
+      "phone": "33333344",
+      "fax": "33333344",
+      "email": "company3@a.com",
+      "website": "http://company3.com"                
+    }
+    ],
+    "app": [
+        {
+          "applicationId": "1",
+          "name": "Application Alpha",          
+          "companyId": "1",
+          "key": "key1",     
+          "enabled": 1        
+        },
+        {
+            "applicationId": "2",
+            "name": "Application Beta",          
+            "companyId": "1",
+            "key": "key2",   
+            "enabled": 0        
+        },
+        {
+            "applicationId": "3",
+            "name": "Application Charlie",          
+            "companyId": "2",
+            "key": "key3", 
+            "enabled": 1       
+        } 
+    ],
+    "campaign": [
+        {
+            "campaignId": "1",
+            "name": "Campaign Alpha",          
+            "appId": "1",
+            "key": "key1",     
+            "enabled": 1,    
+            "createdAt": "1 Jan 2018",
+            "updatedAt": "1 Jan 2018",
+            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
+            "interaction": 1000,
+            "interactionLimitEnabled": true,
+            "interactionLimit": 1500    
+        },
+        {
+            "campaignId": "2",
+            "name": "Campaign Beta",          
+            "appId": "1",
+            "key": "key2",   
+            "enabled": 0,  
+            "createdAt": "2 Jan 2018",
+            "updatedAt": "2 Jan 2018",
+            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
+            "interaction": 1000,
+            "interactionLimitEnabled": false,
+            "interactionLimit": 0        
+        },
+        {
+            "campaignId": "3",
+            "name": "Campaign Charlie",          
+            "appId": "1",
+            "key": "key3", 
+            "enabled": 1,     
+            "createdAt": "3 Jan 2018",
+            "updatedAt": "3 Jan 2018",
+            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
+            "interaction": 1000,
+            "interactionLimitEnabled": true,
+            "interactionLimit": 2000           
+        },
+        {
+            "campaignId": "4",
+            "name": "Campaign Delta",          
+            "appId": "2",
+            "key": "key4", 
+            "enabled": 1,     
+            "createdAt": "4 Jan 2018",
+            "updatedAt": "4 Jan 2018",
+            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
+            "interaction": 1000,
+            "interactionLimitEnabled": true,
+            "interactionLimit": 2500           
+        }
+    ],
+    "trigger": [
+        {
+            "triggerId":"1",
+            "name":"Leanne Lueilwitz",
+            "campaignId":"1",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://christop.info",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":1,
+            "framesTrained":11,
+            "framesTotal":111,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+        {
+            "triggerId":"2",
+            "name":"Jerald Heathcote",
+            "campaignId":"1",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://bethel.com",
+            "custom":"",
+            "enabled":0,
+            "status":2,
+            "framesAccepted":2,
+            "framesTrained":22,
+            "framesTotal":222,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+        {
+            "triggerId":"3",
+            "name":"Diamond Langworth",
+            "campaignId":"2",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://elva.org",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":3,
+            "framesTrained":33,
+            "framesTotal":333,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+        {
+            "triggerId":"4",
+            "name":"Delta theTrigger",
+            "campaignId":"4",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://google.com",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":4,
+            "framesTrained":44,
+            "framesTotal":444,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+        {
+            "triggerId":"5",
+            "name":"Echo theTrigger",
+            "campaignId":"1",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://google.com",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":5,
+            "framesTrained":55,
+            "framesTotal":555,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+      {
+            "triggerId":"6",
+            "name":"Fanta theTrigger",
+            "campaignId":"1",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://google.com",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":6,
+            "framesTrained":66,
+            "framesTotal":666,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        },
+      {
+            "triggerId":"7",
+            "name":"Gorilla theTrigger",
+            "campaignId":"1",
+            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "payloadUrl":"http://google.com",
+            "custom":"",
+            "enabled":0,
+            "status":3,
+            "framesAccepted":7,
+            "framesTrained":77,
+            "framesTotal":777,
+            "mime":"image/jpeg",
+            "createdAt":"10 Aug 2018",
+            "updatedAt":"10 Aug 2018"
+        }
+     ]
+}
