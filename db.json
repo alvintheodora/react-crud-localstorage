@@ -1,161 +1,174 @@
 {
-    "data":[
-        {
-            "id": 4,
-            "full_name": "Ahmad Saepudin",
-            "email": "ahmadsaepudin204@gmail.com"
-        },
-        {
-            "id": 5,
-            "full_name": "Untung Suripto",
-            "email": "driver@ervill.net"
-        },
-        {
-            "id": 6,
-            "full_name": "Sulhan Syadeli",
-            "email": "hansyadeli@yahoo.com"
-         },
-        {
-            "id": 7,
-            "full_name": "Rifqi Ruhyattamam",
-            "email": "rifqi96@yahoo.com"
-        },
-        {
-            "id": 8,
-            "full_name": "Yani",
-            "email": "yani@ervill.net"
-         },
-        {
-            "id": 9,
-            "full_name": "Alvin Theodora",
-            "email": "alvin_theodora@yahoo.com"
-         },
-        {
-            "id": 10,
-            "full_name": "Asyfida Bella",
-            "email": "asyfida.bella@live.com"
-        },
-        {
-            "id": 11,
-            "full_name": "Dwi Iriani",
-            "email": "dwiiriani.liman@gmail.com"
-        },
-        {
-            "id": 13,
-            "full_name": "API Tester",
-            "email": "apitester@ervill.net"
-        }
-    ],
-    "company": [
-    {
-      "companyId": "1",
-      "name": "Company Alpha",          
-      "type": 0,
-      "address1": "address 1",
-      "address2": "",
-      "city": "city1",
-      "state": "state1",
-      "zip": "15343",
-      "country": "SG",
-      "phone": "11223344",
-      "fax": "11223344",
-      "email": "company1@a.com",
-      "website": "http://company1.com"                
-    },  
-    {
-      "companyId": "2",
-      "name": "Company Beta",          
-      "type": 0,
-      "address1": "address 2",
-      "address2": "",
-      "city": "city2",
-      "state": "state2",
-      "zip": "25343",
-      "country": "SG",
-      "phone": "22223344",
-      "fax": "22223344",
-      "email": "company2@a.com",
-      "website": "http://company2.com"                
-    },    
-    {
-      "companyId": "3",
-      "name": "Company Charlie",          
-      "type": 0,
-      "address1": "address 3",
-      "address2": "",
-      "city": "city3",
-      "state": "state3",
-      "zip": "35343",
-      "country": "SG",
-      "phone": "33333344",
-      "fax": "33333344",
-      "email": "company3@a.com",
-      "website": "http://company3.com"                
-    }
-    ],
-    "app": [
-        {
-          "applicationId": "1",
-          "name": "Application Alpha",          
-          "companyId": "1",
-          "key": "key1",     
-          "enabled": 1        
-        },
-        {
-            "applicationId": "2",
-            "name": "Application Beta",          
-            "companyId": "1",
-            "key": "key2",   
-            "enabled": 0        
-        },
-        {
-            "applicationId": "3",
-            "name": "Application Charlie",          
-            "companyId": "2",
-            "key": "key3", 
-            "enabled": 1       
-        } 
-    ],
-    "campaign": [
-        {
-            "campaignId": "1",
-            "name": "Alpha",          
-            "appId": "1",
-            "key": "key1",     
-            "enabled": 1,    
-            "createdAt": "1 Jan 2018",
-            "updatedAt": "1 Jan 2018",
-            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
-            "interaction": 1000,
-            "interactionLimitEnabled": true,
-            "interactionLimit": 1500    
-        },
-        {
-            "campaignId": "2",
-            "name": "Beta",          
-            "appId": "1",
-            "key": "key2",   
-            "enabled": 0,  
-            "createdAt": "2 Jan 2018",
-            "updatedAt": "2 Jan 2018",
-            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
-            "interaction": 1000,
-            "interactionLimitEnabled": false,
-            "interactionLimit": 0        
-        },
-        {
-            "campaignId": "3",
-            "name": "Charlie",          
-            "appId": "2",
-            "key": "key3", 
-            "enabled": 1,     
-            "createdAt": "3 Jan 2018",
-            "updatedAt": "3 Jan 2018",
-            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
-            "interaction": 1000,
-            "interactionLimitEnabled": true,
-            "interactionLimit": 2000           
-        }
-    ],
-    "empty": []
+data: [
+{
+id: 4,
+full_name: "Ahmad Saepudin",
+email: "ahmadsaepudin204@gmail.com"
+},
+{
+id: 5,
+full_name: "Untung Suripto",
+email: "driver@ervill.net"
+},
+{
+id: 6,
+full_name: "Sulhan Syadeli",
+email: "hansyadeli@yahoo.com"
+},
+{
+id: 7,
+full_name: "Rifqi Ruhyattamam",
+email: "rifqi96@yahoo.com"
+},
+{
+id: 8,
+full_name: "Yani",
+email: "yani@ervill.net"
+},
+{
+id: 9,
+full_name: "Alvin Theodora",
+email: "alvin_theodora@yahoo.com"
+},
+{
+id: 10,
+full_name: "Asyfida Bella",
+email: "asyfida.bella@live.com"
+},
+{
+id: 11,
+full_name: "Dwi Iriani",
+email: "dwiiriani.liman@gmail.com"
+},
+{
+id: 13,
+full_name: "API Tester",
+email: "apitester@ervill.net"
+}
+],
+company: [
+{
+companyId: "1",
+name: "Company Alpha",
+type: 0,
+address1: "address 1",
+address2: "",
+city: "city1",
+state: "state1",
+zip: "15343",
+country: "SG",
+phone: "11223344",
+fax: "11223344",
+email: "company1@a.com",
+website: "http://company1.com"
+},
+{
+companyId: "2",
+name: "Company Beta",
+type: 0,
+address1: "address 2",
+address2: "",
+city: "city2",
+state: "state2",
+zip: "25343",
+country: "SG",
+phone: "22223344",
+fax: "22223344",
+email: "company2@a.com",
+website: "http://company2.com"
+},
+{
+companyId: "3",
+name: "Company Charlie",
+type: 0,
+address1: "address 3",
+address2: "",
+city: "city3",
+state: "state3",
+zip: "35343",
+country: "SG",
+phone: "33333344",
+fax: "33333344",
+email: "company3@a.com",
+website: "http://company3.com"
+}
+],
+app: [
+{
+applicationId: "1",
+name: "Application Alpha",
+companyId: "1",
+key: "key1",
+enabled: 1
+},
+{
+applicationId: "2",
+name: "Application Beta",
+companyId: "1",
+key: "key2",
+enabled: 0
+},
+{
+applicationId: "3",
+name: "Application Charlie",
+companyId: "2",
+key: "key3",
+enabled: 1
+}
+],
+campaign: [
+{
+campaignId: "1",
+name: "Campaign Alpha",
+appId: "1",
+key: "key1",
+enabled: 1,
+createdAt: "1 Jan 2018",
+updatedAt: "1 Jan 2018",
+thumbnailUrl: "/static/media/contemplative-reptile.34dfeed2.jpg",
+interaction: 1000,
+interactionLimitEnabled: true,
+interactionLimit: 1500
+},
+{
+campaignId: "2",
+name: "Campaign Beta",
+appId: "1",
+key: "key2",
+enabled: 0,
+createdAt: "2 Jan 2018",
+updatedAt: "2 Jan 2018",
+thumbnailUrl: "/static/media/contemplative-reptile.34dfeed2.jpg",
+interaction: 1000,
+interactionLimitEnabled: false,
+interactionLimit: 0
+},
+{
+campaignId: "3",
+name: "Campaign Charlie",
+appId: "1",
+key: "key3",
+enabled: 1,
+createdAt: "3 Jan 2018",
+updatedAt: "3 Jan 2018",
+thumbnailUrl: "/static/media/contemplative-reptile.34dfeed2.jpg",
+interaction: 1000,
+interactionLimitEnabled: true,
+interactionLimit: 2000
+},
+{
+campaignId: "4",
+name: "Campaign Delta",
+appId: "2",
+key: "key4",
+enabled: 1,
+createdAt: "4 Jan 2018",
+updatedAt: "4 Jan 2018",
+thumbnailUrl: "/static/media/contemplative-reptile.34dfeed2.jpg",
+interaction: 1000,
+interactionLimitEnabled: true,
+interactionLimit: 2500
+}
+],
+empty: [ ]
 }
