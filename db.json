@@ -1,51 +1,4 @@
-{
-    "data":[
-        {
-            "id": 4,
-            "full_name": "Ahmad Saepudin",
-            "email": "ahmadsaepudin204@gmail.com"
-        },
-        {
-            "id": 5,
-            "full_name": "Untung Suripto",
-            "email": "driver@ervill.net"
-        },
-        {
-            "id": 6,
-            "full_name": "Sulhan Syadeli",
-            "email": "hansyadeli@yahoo.com"
-         },
-        {
-            "id": 7,
-            "full_name": "Rifqi Ruhyattamam",
-            "email": "rifqi96@yahoo.com"
-        },
-        {
-            "id": 8,
-            "full_name": "Yani",
-            "email": "yani@ervill.net"
-         },
-        {
-            "id": 9,
-            "full_name": "Alvin Theodora",
-            "email": "alvin_theodora@yahoo.com"
-         },
-        {
-            "id": 10,
-            "full_name": "Asyfida Bella",
-            "email": "asyfida.bella@live.com"
-        },
-        {
-            "id": 11,
-            "full_name": "Dwi Iriani",
-            "email": "dwiiriani.liman@gmail.com"
-        },
-        {
-            "id": 13,
-            "full_name": "API Tester",
-            "email": "apitester@ervill.net"
-        }
-    ],
+{    
     "company": [
     {
       "companyId": "1",
@@ -476,6 +429,5 @@
             "createdAt":"10 Aug 2018",
             "updatedAt":"10 Aug 2018"
             }
-        ],
-    "empty": []
+        ]
 }
