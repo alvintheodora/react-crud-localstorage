@@ -192,7 +192,7 @@
             "triggerId":"2",
             "name":"Jerald Heathcote",
             "campaignId":"1",
-            "thumbnailUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
+            "thumbnailUrl":"/static/media/unilever.mp4",
             "mediaUrl":"/static/media/contemplative-reptile.34dfeed2.jpg",
             "payloadUrl":"http://bethel.com",
             "custom":"",
@@ -201,7 +201,7 @@
             "framesAccepted":2,
             "framesTrained":22,
             "framesTotal":222,
-            "mime":"image/jpeg",
+            "mime":"video/mp4",
             "createdAt":"10 Aug 2018",
             "updatedAt":"10 Aug 2018"
         },
