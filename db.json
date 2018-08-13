@@ -168,6 +168,19 @@
             "interaction": 1000,
             "interactionLimitEnabled": true,
             "interactionLimit": 2500           
+        },
+        {
+            "campaignId": "5",
+            "name": "Campaign Echo",          
+            "appId": "3",
+            "key": "key5", 
+            "enabled": 1,     
+            "createdAt": "5 Jan 2018",
+            "updatedAt": "5 Jan 2018",
+            "thumbnailUrl": "/static/media/contemplative-reptile.34dfeed2.jpg",
+            "interaction": 1000,
+            "interactionLimitEnabled": true,
+            "interactionLimit": 2400           
         }
     ],
     "trigger": [
