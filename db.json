@@ -97,21 +97,21 @@
         {
           "applicationId": "1",
           "name": "Application Alpha",          
-          "companyId": "1",
+          "companyId": "WO",
           "key": "key1",     
           "enabled": 1        
         },
         {
             "applicationId": "2",
             "name": "Application Beta",          
-            "companyId": "1",
+            "companyId": "WO",
             "key": "key2",   
             "enabled": 0        
         },
         {
             "applicationId": "3",
             "name": "Application Charlie",          
-            "companyId": "2",
+            "companyId": "Ze",
             "key": "key3", 
             "enabled": 1       
         } 
