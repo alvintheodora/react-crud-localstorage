@@ -48,7 +48,7 @@
     ],
     "company": [
     {
-      "companyId": "1",
+      "companyId": "WO",
       "name": "Company Alpha",          
       "type": 0,
       "address1": "address 1",
@@ -63,7 +63,7 @@
       "website": "http://company1.com"                
     },  
     {
-      "companyId": "2",
+      "companyId": "Ze",
       "name": "Company Beta",          
       "type": 0,
       "address1": "address 2",
@@ -78,7 +78,7 @@
       "website": "http://company2.com"                
     },    
     {
-      "companyId": "3",
+      "companyId": "rv",
       "name": "Company Charlie",          
       "type": 0,
       "address1": "address 3",
